@@ -4,3 +4,6 @@ docker build -t custom-fluentd:latest --force-rm -f Dockerfile .
 #run_it
 docker run --name fluentd -d -p 24224:24224 -p 24224:24224/udp -v "/tmp/fluentd_log:/fluentd/log" -v "$(pwd)/fluent.conf:/fluentd/etc/fluent.conf" --network docker-elk_elk  custom-fluentd:latest
 
+
+
+### to configurate logsearch https://github.com/uken/fluent-plugin-elasticsearch
