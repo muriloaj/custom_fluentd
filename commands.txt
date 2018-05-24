@@ -8,3 +8,5 @@ docker run --name fluentd -d -p 24224:24224 -p 24224:24224/udp -v "/tmp/fluentd_
 
 ### to configurate logsearch https://github.com/uken/fluent-plugin-elasticsearch
 ### https://docs.fluentd.org/v0.12/articles/out_copy
+
+###Configure: https://docs.docker.com/config/containers/logging/fluentd/
